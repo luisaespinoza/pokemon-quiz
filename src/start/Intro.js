@@ -4,8 +4,8 @@ import Button from '../common/Button.js'
 
 export default function Start() {
   let buttonText = "Start"
-  const handleClick () => {
-
+  const handleClick = () => {
+    
   }
   return (
     <div>
