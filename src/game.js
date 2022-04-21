@@ -1,0 +1,34 @@
+
+class game {
+  selectedPokemon= null
+  pokemonTypes= "normal fire water electric grass ice fighting poison ground flying psychic bug rock ghost dragon dark steel fairy".split(" ")
+  pokemonUrl= null
+  questionData= []
+  nameData=[]
+  score= null
+  quesitons= null
+  difficulty= null
+
+  selectRandomPokemon() {
+    let temp = Math.floor(Math.random()*898)
+
+    if( game.nameData.indexOf(temp)>= 0) {
+      return game.selectRandomPokemon()
+    }
+    else {
+      return temp
+    }
+  },
+
+  setPokemonUrl(pokemonIdNo) {
+    game.pokemonUrl = `https://pokeapi.co/api/v2/pokemon/${pokemonIdNo}`
+    return game.pokemonUrl
+  },
+
+  renderWhoQuestion(questionDataArray) {
+    // relevant JSX here
+  },
+  renderWhoAnswer(questionDataArray, difficulty) {
+    // relevant JSX
+  },
+}
