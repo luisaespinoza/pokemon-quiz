@@ -1,5 +1,5 @@
 import React from 'react'
-import pokeLogo from './pokemon-logo.png';
+import pokeLogo from '../pokemon-logo.png'
 
 export default function logo() {
   return (
