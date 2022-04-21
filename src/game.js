@@ -6,8 +6,11 @@ class game {
   questionData= []
   nameData=[]
   score= null
-  quesitons= null
+  questions= null
   difficulty= null
+  constructor(difficulty) {
+    this.difficulty = difficulty
+  }
 
   selectRandomPokemon() {
     let temp = Math.floor(Math.random()*898)
