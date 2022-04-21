@@ -1,12 +1,12 @@
 
 import './App.css';
-import Logo from './Logo';
+import Intro from './start/Intro';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <Logo/>
+        <Intro/>
       </header>
     </div>
   );
