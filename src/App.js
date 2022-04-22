@@ -1,12 +1,11 @@
 
 import './App.css'
+import Start from './start/Start';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <div>Hello World!!</div>
-      </header>
+      <Start />
     </div>
   );
 }
