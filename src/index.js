@@ -16,10 +16,10 @@ ReactDOM.render(
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<App />} >
-          <Route path="start" element={<Start />} />
+        </Route>
+          <Route path="" element={<Start />} />
           <Route path="quiz" element={<Quiz />} />
           <Route path="setup" elmennt={<Setup />} />
-        </Route>
       </Routes>
     </BrowserRouter>,
   </React.StrictMode>,

@@ -4,7 +4,7 @@ import LinkButton from '../common/LinkButton.js'
 
 
 export default function Start() {
-  let buttonText = "Start Setup".split(" ")
+  let buttonText = "Quiz Setup".split(" ")
   const buttonArray = buttonText.map((text, textIndex, textArray) => {
     return (
       <LinkButton linkText={text.toLowerCase()} buttonText={text} key={textIndex}/>
