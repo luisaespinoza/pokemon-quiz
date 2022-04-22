@@ -1,17 +1,19 @@
 import React from 'react'
 import Logo from './Logo.js'
-import Button from '../common/Button.js'
-import { Link } from "react-router-dom"
+import LinkButton from '../common/LinkButton.js'
 
 
 export default function Start() {
-  let buttonText = "Start"
+  let buttonText = "Start Setup".split(" ")
+  const buttonArray = buttonText.map((text, textIndex, textArray) => {
+    return (
+      <LinkButton linkText={text.toLowerCase()} buttonText={text} key={textIndex}/>
+    )
+  })
   return (
     <div>
       <Logo />
-      <Link to="/quiz">
-        <Button text={buttonText}/>
-      </Link>
+      {buttonArray}
     </div>
   )
 }
