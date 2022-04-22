@@ -1,12 +1,11 @@
 
-import './App.css';
-import Intro from './start/Intro';
+import './App.css'
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <Intro/>
+        <div>Hello World!!</div>
       </header>
     </div>
   );

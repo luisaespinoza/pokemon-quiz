@@ -27,11 +27,4 @@ class game {
     game.pokemonUrl = `https://pokeapi.co/api/v2/pokemon/${pokemonIdNo}`
     return game.pokemonUrl
   },
-
-  renderWhoQuestion(questionDataArray) {
-    // relevant JSX here
-  },
-  renderWhoAnswer(questionDataArray, difficulty) {
-    // relevant JSX
-  },
 }
